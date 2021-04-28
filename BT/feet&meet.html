@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num">
+<button type="button" onclick="footToMeter()">Feet to meter</button>
+<button type="button" onclick="meterToFoot()">Meter to feer</button>
+<p id="result"></p>
+<script>
+
+    function footToMeter() {
+        let m = +document.getElementById('num').value;
+        meter = 0.305 * m;
+        document.getElementById('result').innerHTML = meter + "m"
+    }
+
+    function meterToFoot() {
+        let m = +document.getElementById('num').value;
+        feet = 3.279 * m;
+        document.getElementById('result').innerHTML = feet + "ft"
+    }
+</script>
+</body>
+</html>
